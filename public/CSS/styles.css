@@ -119,7 +119,7 @@ button {
 .hero {
 	background-image: url("../images/hero_bg_image.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: top center;
 	height: 100vh;
 	display: flex;
@@ -214,14 +214,14 @@ button {
 }
 
 .excuse-6 {
-	bottom: 30%;
+	bottom: 10%;
 	right: 30px;
 	font-size: 2rem;
-	transform: rotate(90deg);
+	transform: rotate(30deg);
 }
 
 .about-overview {
-	min-height: 700px;
+	min-height: 600px;
 }
 
 .home-about-header {
@@ -235,7 +235,7 @@ button {
 }
 
 .cards-wrapper {
-	min-height: 75%;
+	min-height: 65%;
 	/* max-width: 100%; */
 	display: flex;
 	justify-content: space-around;
@@ -245,27 +245,93 @@ button {
 .card-outer {
 	min-height: 550px;
 	height: 550px;
-	border: solid 1px black;
 	width: 400px;
+	max-width: 100%;
 }
 
 .card-head {
-	height: 30%;
+	height: 60%;
 	width: 100%;
 }
 
 .card-img {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: fill;
 	object-position: center center;
 }
 
+.card-body {
+	height: 40%;
+	width: 100%;
+	padding: 10px;
+}
+
+.card-text {
+	font-size: 1.2rem;
+}
+
+.access-text {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.access-logo {
+	display: block;
+	height: 450px;
+	width: 450px;
+	border-radius: 50%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* Width media queries */
 @media (max-width: 1024px) {
+	.hero-title {
+		font-size: 6rem;
+	}
 	.cards-wrapper {
 		flex-direction: column;
 	}
 	.card-outer {
 		margin: 20px 0;
+	}
+}
+
+@media (max-width: 940px) {
+	.excuses-text {
+		font-size: 5rem;
+	}
+	.excuses {
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 868px) {
+	.hero-title {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 550px) {
+	.hero-title {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.excuses {
+		font-size: 4rem;
+	}
+	.excuses-text {
+		font-size: 3rem;
+	}
+}
+
+/* Height media queries */
+
+@media (max-height: 500px) {
+	.hero-title {
+		font-size: 3rem;
 	}
 }
