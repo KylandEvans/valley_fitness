@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densityDpi=device-dpi"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes"
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,20 +13,21 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="CSS/styles.css" />
-		<link rel="shortcut icon" href="icons/browser_icon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./public/CSS/styles.css" />
+		<link rel="shortcut icon" href="./public/icons/browser_icon.png" type="image/x-icon" />
+		<script src="./public/JS/script.js" defer></script>
 		<title>Valley Fitness</title>
 	</head>
 	<body>
-		<nav class="navbar">
+		<nav class="navbar d-flex">
 			<a href="/" class="navbar-logo">
 				<img
-					src="icons/browser_icon.png"
+					src="./public/icons/browser_icon.png"
 					alt="Logo V background with strength arm"
 					class="logo-x-small"
 				/>
 			</a>
-			<div class="navbar-nav">
+			<div class="navbar-nav d-flex" data-navbar>
 				<ul class="nav-links">
 					<li class="nav-item">
 						<a href="/" class="nav-link-text">Home</a>
@@ -41,9 +42,20 @@
 						<a href="/about" class="nav-link-text">About</a>
 					</li>
 				</ul>
+				<div class="nav-btn">
+					<button class="btn-primary shop-btn">Shop</button>
+				</div>
 			</div>
-			<div class="nav-btn">
-				<button class="btn-primary shop-btn">Shop</button>
+
+			<div class="nav-collapse d-none" data-nav-open>
+				<div class="nav-collapse-outer">
+					<span class="nav-collapse-inner"></span>
+					<span class="nav-collapse-inner"></span>
+					<span class="nav-collapse-inner"></span>
+				</div>
+			</div>
+			<div class="nav-close-outer d-none" data-nav-close>
+				<img src="./public/icons/cross_icon_white.svg" alt="" />
 			</div>
 		</nav>
 		<main>
@@ -69,7 +81,7 @@
 				<div class="cards-wrapper">
 					<div class="card-outer">
 						<div class="card-head">
-							<img src="images/freeweight_closeup.jpg" alt="" class="card-img" />
+							<img src="./public/images/freeweight_closeup.jpg" alt="" class="card-img" />
 						</div>
 						<div class="card-body">
 							<p class="card-text"
@@ -80,7 +92,7 @@
 					</div>
 					<div class="card-outer">
 						<div class="card-head">
-							<img src="images	/dumbells_medium.jpg" alt="" class="card-img" />
+							<img src="./public/images/dumbells_medium.jpg" alt="" class="card-img" />
 						</div>
 						<div class="card-body">
 							<p class="card-text">
@@ -91,7 +103,7 @@
 					</div>
 					<div class="card-outer">
 						<div class="card-head">
-							<img src="images/overview_image.jpg" alt="" class="card-img" />
+							<img src="./public/images/overview_image.jpg" alt="" class="card-img" />
 						</div>
 						<div class="card-body">
 							<p class="card-text">
@@ -106,7 +118,7 @@
 				<div class="access-header">
 					<h2 class="access-text">Come in anytime day or night!</h2>
 					<div class="access-logo-wrapper">
-						<img src="icons/24_7_logo.jpg" alt="" class="access-logo" />
+						<img src="./public/icons/24_7_logo.jpg" alt="" class="access-logo" />
 					</div>
 				</div>
 			</section>
