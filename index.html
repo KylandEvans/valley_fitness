@@ -7,6 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes"
 		/>
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,7 +16,7 @@
 		/>
 		<link rel="stylesheet" href="./public/CSS/styles.css" />
 		<link rel="shortcut icon" href="./public/icons/browser_icon.png" type="image/x-icon" />
-		<script src="./public/JS/script.js" defer></script>
+		<script src="./public/JS/script.js" type="module"></script>
 		<title>Valley Fitness</title>
 	</head>
 	<body>
@@ -33,13 +34,13 @@
 						<a href="/" class="nav-link-text">Home</a>
 					</li>
 					<li class="nav-item">
-						<a href="/plans" class="nav-link-text">Plans</a>
+						<a href="/plans.html" class="nav-link-text">Plans</a>
 					</li>
 					<li class="nav-item">
-						<a href="personal_training" class="nav-link-text">Personal Training</a>
+						<a href="/personal_training.html" class="nav-link-text">Personal Training</a>
 					</li>
 					<li class="nav-item">
-						<a href="/about" class="nav-link-text">About</a>
+						<a href="/about.html" class="nav-link-text">About</a>
 					</li>
 				</ul>
 				<div class="nav-btn">
@@ -65,7 +66,7 @@
 			</section>
 			<section class="no-excuses-container">
 				<div class="excuses-text">Leave the</div>
-				<div class="excuses">Excuses</div>
+				<div class="excuses" data-excuses-text> </div>
 				<div class="excuses-text">at the door!</div>
 				<p class="excuse-1 excuse-default">I'm too tired.</p>
 				<p class="excuse-2 excuse-default">I don't have time.</p>
@@ -122,6 +123,41 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="learn-more">
+				<div class="learn-more-container">
+					<img src="./public/images/collage_trans.png" alt="" class="learn-more-collage" />
+				</div>
+				<div class="learn-more-text">
+					<h1 class="learn-more-header"
+						>Get yourself a membership and start changing your life today!</h1
+					>
+					<div>
+						<button href="/" class="learn-more-link lm-link" type="button">Learn More</button>
+						<button href="/" class="learn-more-link pt-link" type="button"
+							>See Personal Training</button
+						>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer-logo">
+				<img src="./public/icons/secondary_logo.png" alt="" class="ftr-logo" />
+			</div>
+			<div class="ftr-content">
+				<div class="content-wrapper">
+					<a href="/" class="ftr-item">Home</a>
+					<a href="/plans" class="ftr-item">Plans</a>
+					<a href="/personal_training" class="ftr-item">Personal Training</a>
+					<a href="/about" class="ftr-item">About</a>
+				</div>
+				<div class="socials-wrapper">
+					<a href="https://www.facebook.com/Valleyfitness304" target="_blank">
+						<img src="./public/icons/f_logo_RGB-White_58.png" alt="" class="ftr-social"
+					/></a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
