@@ -32,7 +32,7 @@ const app = {
 		};
 
 		const navResizeEvent = () => {
-			if (window.innerWidth < 768) {
+			if (window.innerWidth <= 768) {
 				toggleNavClose();
 				htmlEle.classList.remove("noscroll");
 				bodyEle.classList.remove("noscroll");
