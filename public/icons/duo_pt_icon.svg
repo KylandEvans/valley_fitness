@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="23"
+   height="15"
+   fill="currentColor"
+   class="bi bi-person-fill"
+   viewBox="0 0 23.000001 15"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="duo_pt_icon.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="26"
+     inkscape:cx="2.1730769"
+     inkscape:cy="13.173077"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     width="23.18605px"
+     height="17px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <path
+     d="m 1.2692307,14.697426 c 0,0 -0.99999993,0 -0.99999993,-1 0,-1 0.99999993,-3.9999988 6.00000003,-3.9999988 4.9999992,0 5.9999992,2.9999988 5.9999992,3.9999988 0,1 -1,1 -1,1 z M 6.2692308,8.6974272 a 3,3 0 1 0 0,-6 3,3 0 0 0 0,6 z"
+     id="path2" />
+  <path
+     d="m 11.530709,14.697427 c 0,0 -1.030709,0 -1.030709,-1 0,-1 1.030709,-3.9999999 6.184253,-3.9999999 5.153544,0 6.184253,2.9999999 6.184253,3.9999999 0,1 -1.030709,1 -1.030709,1 z m 5.153544,-5.9999999 a 3.0921268,3 0 1 0 0,-6 3.0921268,3 0 0 0 0,6 z"
+     id="path7304"
+     style="stroke-width:1.01524" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Text_Layer"
+     transform="translate(-0.03846154,-0.14872685)" />
+</svg>

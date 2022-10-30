@@ -16,7 +16,12 @@
 html {
 	font-family: "Raleway", sans-serif;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
+
+/* html::-webkit-scrollbar-track {  
+	color: transparent;
+} */
 
 body {
 	background-color: var(--primary-white);
@@ -308,9 +313,10 @@ button {
 	color: var(--primary-green);
 	text-decoration: line-through;
 	position: absolute;
+	display: none;
 }
 
-.excuse-1 {
+/* .excuse-1 {
 	top: 40px;
 	right: 30px;
 	transform: rotate(30deg);
@@ -319,28 +325,28 @@ button {
 
 .excuse-2 {
 	top: 50px;
-	left: 30px;
+	left: 50px;
 	font-size: 2rem;
 	transform: rotate(-15deg);
 }
 
 .excuse-3 {
-	bottom: 50px;
-	left: 40px;
-	font-size: 1.5rem;
+	top: 150px;
+	left: 60px;
+	font-size: 2rem;
 	transform: rotate(-40deg);
 }
 
 .excuse-4 {
-	top: 0;
-	right: 50%;
-	font-size: 1.5rem;
+	bottom: 100px;
+	left: 50px;
+	font-size: 2rem;
 }
 
 .excuse-5 {
 	bottom: 10px;
-	right: 30%;
-	font-size: 1.2rem;
+	right: 17%;
+	font-size: 2rem;
 }
 
 .excuse-6 {
@@ -348,7 +354,7 @@ button {
 	right: 30px;
 	font-size: 2rem;
 	transform: rotate(30deg);
-}
+} */
 
 .about-overview {
 	min-height: 600px;
@@ -404,6 +410,7 @@ button {
 
 .card-text {
 	font-size: 1.2rem;
+	text-align: center;
 }
 
 .access-text {
@@ -453,7 +460,7 @@ button {
 .learn-more-link {
 	height: 50px;
 	width: 150px;
-	color: inherit;
+	color: initial;
 }
 
 .learn-more-link:hover {
@@ -504,14 +511,14 @@ button {
 }
 
 .socials-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-self: end;
+	/* width: 100%; */
 }
 
 .ftr-social {
 	height: 50px;
 	width: 50px;
+	align-self: flex-end;
 }
 
 .plans-main {
@@ -559,11 +566,11 @@ button {
 }
 
 .card-details-key {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 .card-details-value {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 .plans-card-text {
@@ -629,7 +636,7 @@ button {
 	align-items: center;
 }
 
-.pt-self-img {
+.round-img {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
@@ -642,6 +649,65 @@ button {
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px rgba(220, 220, 220);
 	/* font-size: 1.3rem; */
+}
+
+/* .header-photo {
+	min-height: 400px;
+	background: url("../images/fonrt_shot.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+} */
+
+.about-meet-header {
+	text-align: center;
+	margin: 30px;
+}
+
+.about-meet-team {
+	min-height: 200px;
+	background: var(--primary-green);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-img {
+	display: block;
+	margin: 0 auto;
+}
+
+.name-subheader {
+	text-align: center;
+}
+
+.title-subheader {
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+.about-bio {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100vw;
+	min-height: 300px;
+	margin-right: 15px;
+}
+
+.text-bubble {
+	min-height: 190px;
+	max-width: 450px;
+	border-radius: 10px;
+	background: rgb(250, 250, 250);
+	box-shadow: 3px 3px 3px rgba(220, 220, 220);
+	width: auto;
+}
+
+.text-bubble-inner {
+	padding: 30px;
 }
 
 /* Width media queries */
@@ -765,6 +831,9 @@ button {
 	.card-outer {
 		width: 100%;
 		margin: 20px 0;
+		border: none;
+		border-bottom: solid 1px black;
+		padding-right: 5px;
 	}
 	.card-head {
 		height: 75%;
@@ -790,8 +859,27 @@ button {
 		font-size: 3rem;
 	}
 	.excuse-1,
-	.excuse-3 {
-		visibility: hidden;
+	.excuse-2,
+	.excuse-3,
+	.excuse-4,
+	.excuse-5,
+	.excuse-6 {
+		transform: rotate(0deg);
+	}
+
+	.excuse-1 {
+		top: 60px;
+	}
+	.excuse-2 {
+		top: 100px;
+		left: 15px;
+	}
+	.excuse-4 {
+		left: 15px;
+		padding: 0;
+		margin: 0;
+		font-size: 2rem;
+		text-align: start;
 	}
 }
 
