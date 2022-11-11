@@ -733,27 +733,28 @@ tr {
 
 .table-cell {
 	height: auto;
-	width: 100px;
+	width: 350px;
 	border-spacing: 0;
 	border-collapse: collapse;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	border: solid 1px black;
+	padding: 3px;
 }
 
 .table-head {
-	font-size: 1.7rem;
+	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
 	padding: 3px;
 }
 
-.odd-row {
+/* .odd-row {
 	background: rgb(176, 255, 102);
 }
 
 .even-row {
 	background: rgb(92, 212, 62);
-}
+} */
 
 .location {
 	min-height: 500px;
@@ -786,7 +787,125 @@ tr {
 	font-size: 2rem;
 }
 
+.shop-banner-container {
+	max-height: 50vh;
+	background: url("../../default_icons_ignore/temp_wide_image.jpg");
+	height: 50vh;
+	width: 100vw;
+	background-position: center center;
+	background-size: cover;
+}
+
+.shop-banner {
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-text {
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+}
+
+.shop {
+	/* min-height: 1000px; */
+	margin: 100px 50px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	gap: 20px;
+}
+
+.shop-card {
+	height: auto;
+	max-width: 300px;
+}
+
+.shop-img {
+	object-fit: cover;
+	height: auto;
+}
+
+.shop-card-head {
+	height: auto;
+}
+
+.shop-card-body {
+	height: auto;
+}
+
+.shop-sub-header {
+	padding: 5px;
+}
+
+.size-container {
+	display: flex;
+	padding-left: 4px;
+	margin-bottom: 4px;
+}
+
+.size {
+	padding: 5px;
+	margin: 3px;
+	border: 1px solid rgba(10, 10, 10, 0.568);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.colors-container {
+	display: flex;
+	padding-left: 5px;
+}
+
+.color {
+	height: 30px;
+	width: 30px;
+	border: 1px solid rgba(10, 10, 10, 0.568);
+	margin: 3px;
+	border-radius: 50%;
+	padding: 6px;
+}
+
+.color-grey {
+	background-color: grey;
+}
+
+.color-black {
+	background-color: black;
+}
+
+.color-red {
+	background-color: red;
+}
+
+.color-blue {
+	background-color: blue;
+}
+
+.color-green {
+	background-color: green;
+}
+
+.description-container {
+	padding: 6px;
+}
+
 /* Width media queries */
+@media (max-width: 1350px) {
+	.shop {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 @media (max-width: 1024px) {
 	.hero-title {
 		font-size: 6rem;
@@ -802,6 +921,9 @@ tr {
 	}
 	.pt-bio-text {
 		max-width: 75%;
+	}
+	.shop {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -819,6 +941,23 @@ tr {
 
 	.pt-plans-container {
 		flex-direction: column;
+	}
+	.about-hours {
+		flex-direction: column;
+		align-items: center;
+	}
+	.table {
+		margin: 30px;
+		width: 100%;
+	}
+	.map-location {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.map {
+		max-width: 500px;
+		/* width: auto; */
 	}
 }
 
@@ -885,6 +1024,20 @@ tr {
 	.pt-photo {
 		width: 100%;
 		height: 50%;
+	}
+}
+
+@media (max-width: 700px) {
+	.shop {
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin: 40px 0;
+	}
+
+	.shop-card {
+		min-width: 90%;
 	}
 }
 
